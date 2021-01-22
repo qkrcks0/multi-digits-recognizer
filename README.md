@@ -2,7 +2,8 @@
 > 잘 알려진 기존 MNIST 예제에서는 숫자 한개씩 인식할 수 있었지만, Multi Digits Recognizer에서는 여러 숫자 객체에 대해서도 인식 할 수 있다. 
 인식된 각 객체들의 confidence를 Multi digits 인식기 아래의 바 그래프에서 확인할 수 있다.
 
-![](../header.png)
+![](../multi_digits_recognizer_1.png)
+![](../multi_digits_recognizer_2.png)
 
 ## 설치 방법
 
@@ -32,21 +33,6 @@ _더 많은 예제와 사용법은 [Wiki][wiki]를 참고하세요._
 make install
 npm test
 ```
-
-## 업데이트 내역
-
-* 0.2.1
-    * 수정: 문서 업데이트 (모듈 코드 동일)
-* 0.2.0
-    * 수정: `setDefaultXYZ()` 메서드 제거
-    * 추가: `init()` 메서드 추가
-* 0.1.1
-    * 버그 수정: `baz()` 메서드 호출 시 부팅되지 않는 현상 (@컨트리뷰터 감사합니다!)
-* 0.1.0
-    * 첫 출시
-    * 수정: `foo()` 메서드 네이밍을 `bar()`로 수정
-* 0.0.1
-    * 작업 진행 중
 
 ## 정보
 

@@ -47,20 +47,17 @@ while True:
     elif c == ord(' '):
         
         cnt, _, stats, _ = cv2.connectedComponentsWithStats(recognizer)
-        # print(cnt)
         dst = recognizer.copy()
         dst = cv2.cvtColor(dst, cv2.COLOR_GRAY2BGR)
 
-        nums=[]
+        stats = sorted(stats, key=lambda x : x[0])
 
         for i in range(1, cnt):
             (x,y,w,h,s) = stats[i]
-            # print(x,y,w,h)
             cv2.rectangle(dst, (x-50, y-50), (x+w+50, y+h+50), (0, 0, 255))
             
             crop = dst[y-40:y+h+40, x-40:x+w+40]
             crop = cv2.cvtColor(crop, cv2.COLOR_BGR2GRAY)
-            # nums.append(crop)
 
             blob = cv2.dnn.blobFromImage(norm_digit(crop), 1/255., (28,28))
             net.setInput(blob)
@@ -68,7 +65,6 @@ while True:
 
             _, maxVal, _, maxLoc = cv2.minMaxLoc(prob)
             digit = maxLoc[0]
-             
             print(f"{digit}", end="")
 
         print()
@@ -76,9 +72,3 @@ while True:
         cv2.imshow("recognizer", recognizer)
 
 cv2.destroyAllWindows()
-
-
-
-
-
-

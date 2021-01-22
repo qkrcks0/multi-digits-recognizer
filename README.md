@@ -1,6 +1,6 @@
 # Multi Digits Recognizer
-> 잘 알려진 기존 MNIST 예제에서는 숫자 한개씩 인식할 수 있었지만, Multi Digits Recognizer에서는 여러 숫자 객체에 대해서도 인식 할 수 있다. 
-인식된 각 객체들의 confidence를 Multi digits 인식기 아래의 바 그래프에서 확인할 수 있다.
+> 잘 알려진 기존 MNIST 예제에서는 숫자 한개씩 인식할 수 있었지만, Multi Digits Recognizer에서는 여러 숫자 객체에 대해서도 인식 할 수 있다.
+> 인식된 각 객체들의 confidence를 Multi digits 인식기 아래의 바 그래프에서 확인할 수 있다.
 
 첫 번째 320*320 검정색 영상에 마우스 외쪽 버튼을 누른 채로 드래그하면 숫자를 쓸 수 있다.
 

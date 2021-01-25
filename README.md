@@ -23,9 +23,6 @@ streamlit_drawable_canvas
 
 
 ## 설치 방법
-
-이 프로잭트에 사용된 라이브러리가 설치되어있지 않은 경우 pip install을 진행한 후에 사용해주세요.
-
 ```
 git clone https://github.com/qkrcks0/multi-digits-recognizer.git
 stremlit run streamlit_multi_digits_recognizer.py

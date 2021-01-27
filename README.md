@@ -21,11 +21,5 @@ streamlit
 
 streamlit_drawable_canvas
 
-
-## 설치 방법
-```
-git clone https://github.com/qkrcks0/multi-digits-recognizer.git
-stremlit run streamlit_multi_digits_recognizer.py
-```
 ## 사용 영상
 https://www.youtube.com/watch?v=5qreN9d61fI
